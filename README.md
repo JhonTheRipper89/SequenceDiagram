@@ -5,7 +5,7 @@ sequenceDiagram
     participant Server
     Browser->>Server: Make a request get
     Server->>Browser: request template (html, css, javascript)
-    viewscreen->>iframe: html & javascript
+    Browser->>Server: Make a request post
     iframe->>dotcom: iframe ready
     dotcom->>iframe: set mermaid data on iframe
     iframe->>iframe: render mermaid
