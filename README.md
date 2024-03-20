@@ -3,7 +3,6 @@
 sequenceDiagram
     participant Browser
     participant Server
-    participant viewscreen
     dotcom->>iframe: loads html w/ iframe url
     iframe->>viewscreen: request template
     viewscreen->>iframe: html & javascript
